@@ -42,11 +42,12 @@
                             <label for="phone" class="col-md-4 col-form-label text-md-end">{{ __('Phone No.') }}</label>
 
                             <div class="col-md-6">
-                                <input id="phone" type="tel" class="form-control @error('email') is-invalid @enderror" name="phone" value="{{ old('tel') }}" required autocomplete="tel">
+                                <input id="phone" type="tel" class="form-control @error('tel') is-invalid @enderror" name="phone" value="{{ old('tel') }}" required autocomplete="tel">
 
                                 @error('phone')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
+
                                 </span>
                                 @enderror
                             </div>
