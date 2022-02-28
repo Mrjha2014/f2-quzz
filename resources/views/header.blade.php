@@ -20,10 +20,12 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
  <link href="{{ asset('css/index.css') }}" rel="stylesheet">
 </head>
-    <body class="antialiased">
-        @include('layouts.navigation')
-
-    </body>
-</html>
-
-
+<form method="post" id="myForm" onsubmit="return submitForm()">
+    <select id="select-action" name="action">
+       <option value="" disabled selected>Choose your option</option>
+       <option value ="animals">Animals</option>
+       <option value ="flowers">Flowers</option>
+       <option value ="cars">Cars</option>
+    </select>
+    <button type="submit">Submit</button>
+</form>

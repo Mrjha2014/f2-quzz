@@ -1,0 +1,155 @@
+   body,
+   html {
+       height: 100%;
+       overflow-x: hidden;
+   }
+   
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       border: 0;
+   }
+   
+   .navbar-brand img {
+       width: 25px;
+   }
+   
+   .selecr_are {
+       margin-top: 50%;
+   }
+   
+   .bottom_link {
+       position: absolute;
+       bottom: 50px;
+       left: 50px;
+       right: 50px;
+   }
+   
+   .google_login {
+       position: fixed;
+       left: 50%;
+       top: 50%;
+       transform: translate(-50%, -50%);
+       font-size: x-large;
+   }
+   
+   .google_box {
+       border-radius: 25px;
+       background: #e2e4e0;
+       width: 300px;
+       height: 40px;
+       text-align: center;
+   }
+   
+   .main {
+       padding-left: 50px;
+       padding-right: 50px;
+       padding-top: 20px;
+       padding-bottom: 50px;
+   }
+   
+   .link_p {
+       border-radius: 5px;
+       background: #c7d1be;
+       padding: 2px;
+       width: 15px;
+       height: 15px;
+       display: inline-block;
+   }
+   
+   .link_pl {
+       display: inline-block;
+       padding-left: 20px;
+   }
+   
+   .Checkbox {
+       transform: scale(2);
+       margin-right: 20px;
+   }
+   
+   .process {
+       border-radius: 25px;
+       background: #c1c4be;
+       padding: 10px;
+       width: 170px;
+       height: 60px;
+       font-size: x-large;
+       text-align: center;
+   }
+   
+   .test_box {
+       margin-left: 100px;
+   }
+   
+   .test_hed {
+       background: #dbe0d6;
+       width: 93%;
+       height: 210px;
+       position: absolute;
+       z-index: -1;
+   }
+   
+   .hed_mar {
+       margin-top: 20px;
+   }
+   
+   .test_img {
+       left: 4%;
+       top: 10%;
+       width: 7%;
+       border-radius: 70%;
+       position: absolute;
+       z-index: -1;
+   }
+   
+   .titel {
+       margin-left: 30px;
+   }
+   
+   .qustion {
+       margin-top: 220px;
+       margin-left: 100px;
+       margin-right: 100px;
+   }
+   
+   .options {
+       margin-top: 20px;
+       margin-left: 120px;
+       margin-right: 100px;
+   }
+   
+   .options_btn_row {
+       margin-left: 80px;
+       margin-top: 20px;
+   }
+   
+   .options_btn {
+       background-color: #b1bdb8;
+       padding: 10px;
+       width: 100px;
+       height: 50px;
+       text-align: center;
+       border-radius: 12px;
+       margin-left: 50px;
+       margin-bottom: 20px;
+   }
+   
+   .revew_btn1 {
+       width: 200px;
+   }
+   
+   .revew_btn3 {
+       width: 250px;
+   }
+   
+   .options_btn_are {
+       margin-top: 10px;
+   }
+   
+   .submit_area {
+       padding: 20px;
+       width: 100%;
+       height: 90px;
+       background-color: #a0b6ad;
+   }
