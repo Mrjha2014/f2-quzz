@@ -24,3 +24,18 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+
+// -----------------------------------------------------------------
+
+
+Route::get('/header', function () {
+    return view('header');
+});
+Route::get('/animals', function () {
+    return view('animals');
+});
+Route::get('/3', function () {
+    return view('3');
+});

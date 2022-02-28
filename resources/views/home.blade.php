@@ -2,30 +2,7 @@
 
 @section('content')
 
-<div class="container">
-    <div class="row">
-        <div class="col-4"></div>
-        <div class="col-4">
-            <div class="selecr_are">
-                <p>Paper</p>
-                <form>
-                    <select class="form-select" aria-label="" name="test_sub">
-                        <option selected>Open this select menu</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                        <option value="4">Three</option>
-                        <option value="5">Three</option>
-                        <option value="6">Three</option>
-                    </select><br>
-                    <button type="button" value="Submit" class="btn btn-primary">START MOCK TEST</button>
-            </div>
-            </form>
-        </div>
-    </div>
-</div>
-
-
+@include('layouts.chose_sub')
 <div class="container">
     <div class="bottom_link">
         <h3>Lorem ipsum </h3>

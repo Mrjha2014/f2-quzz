@@ -1,31 +1,33 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Filler Form online test') }}</title>
-
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
- <link href="{{ asset('css/index.css') }}" rel="stylesheet">
+<html>
+<head>
+<title>test</title>
+<script src="{{ asset('js/index.js') }}" defer></script>
 </head>
-<form method="post" id="myForm" onsubmit="return submitForm()">
-    <select id="select-action" name="action">
-       <option value="" disabled selected>Choose your option</option>
-       <option value ="animals">Animals</option>
-       <option value ="flowers">Flowers</option>
-       <option value ="cars">Cars</option>
-    </select>
-    <button type="submit">Submit</button>
-</form>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <div class="selecr_are">
+                <p>Paper</p>
+                <form name="test_type">
+                    <select class="form-select" aria-label="" name="selection">
+                        <option selected>Open this select menu</option>
+                        <option value="animals">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                        <option value="4">Three</option>
+                        <option value="5">Three</option>
+                        <option value="6">Three</option>
+                    </select><br>
+                    <button type="button" value="Submit" class="btn btn-primary" onClick="WinOpen();">START MOCK TEST</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
+

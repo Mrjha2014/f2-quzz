@@ -1,12 +1,6 @@
- function submitForm() {
-        var selectedOption = $('#select-action').val();
-        var url = "";
-        if(selectedOption == 'animals') {
-            url = '{{ route('your/route')}}';
-        } else if (selectedOption == 'flowers') {
-            url = '{{ route('your/route')}}';
-        }
-        $('#myForm').attr('action', url);
-        $('form#myForm').submit();
-        return false;
-    }
+// redurect on chose of test subjest redurect 
+function WinOpen() {
+  var url=document.test_type.selection.value
+  document.location.href=url
+
+}
