@@ -23,7 +23,7 @@
 </head>
     <body class="antialiased">
         @include('layouts.navigation')
-
+<br><br>
     </body>
 </html>
 

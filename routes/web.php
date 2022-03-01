@@ -21,21 +21,18 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
 
 // -----------------------------------------------------------------
 
 
-Route::get('/header', function () {
-    return view('header');
-});
-Route::get('/animals', function () {
-    return view('animals');
-});
-Route::get('/3', function () {
-    return view('3');
-});
+Route::get('/header',[App\Http\Controllers\HomeController::class, 'index'])->name('header');
+
+
+Route::get('/animals', [App\Http\Controllers\HomeController::class, 'index'])->name('animals');
+
+Route::get('/3', [App\Http\Controllers\HomeController::class, 'index'])->name('3');

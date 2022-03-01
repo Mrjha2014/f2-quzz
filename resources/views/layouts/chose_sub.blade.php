@@ -7,7 +7,7 @@
                 <p>Paper</p>
                 <form name="test_type">
                     <select class="form-select" aria-label="" name="selection">
-                        <option selected>Open this select menu</option>
+                        <option selected disabled>Open this select menu</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
