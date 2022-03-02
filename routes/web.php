@@ -28,7 +28,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 // -----------------------------------------------------------------
 
 
-Route::get('/rules',[App\Http\Controllers\HomeController::class, 'rules'])->name('rules');
+Route::get('/rules', [App\Http\Controllers\HomeController::class, 'rules'])->name('rules');
 
 
 Route::get('/exam', [App\Http\Controllers\HomeController::class, 'exam'])->name('exam');
@@ -39,3 +39,9 @@ Route::get('/exam', [App\Http\Controllers\HomeController::class, 'exam'])->name(
 // Route::get('/rules', function () {
 //     return view('layouts.pages.rules');
 // });
+
+
+// student img
+Route::get('students', [App\Http\Controllers\Studentcontroller::class, 'index']);
+Route::get('add-students', [App\Http\Controllers\Studentcontroller::class, 'create']);
+Route::post('add-students', [App\Http\Controllers\Studentcontroller::class, 'store']);
