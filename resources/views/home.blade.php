@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-
-@include('layouts.chose_sub')
+@include('layouts.components.chose_sub')
 <div class="container">
     <div class="bottom_link">
         <h3>Lorem ipsum </h3>

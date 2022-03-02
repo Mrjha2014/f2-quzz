@@ -22,7 +22,7 @@
  <link href="{{ asset('css/index.css') }}" rel="stylesheet">
 </head>
     <body class="antialiased">
-        @include('layouts.navigation')
+        @include('layouts.components.navigation')
 <br><br>
     </body>
 </html>

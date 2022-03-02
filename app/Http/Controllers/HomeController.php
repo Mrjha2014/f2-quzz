@@ -25,4 +25,15 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function exam()
+    {
+        return view('layouts.pages.exam');
+    }
+public function rules()
+    {
+        return view('layouts.pages.rules');
+    }
+
+
 }

@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -21,18 +23,19 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-// Auth::routes();
-
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
 
 
 // -----------------------------------------------------------------
 
 
-Route::get('/header',[App\Http\Controllers\HomeController::class, 'index'])->name('header');
+Route::get('/rules',[App\Http\Controllers\HomeController::class, 'rules'])->name('rules');
 
 
-Route::get('/animals', [App\Http\Controllers\HomeController::class, 'index'])->name('animals');
+Route::get('/exam', [App\Http\Controllers\HomeController::class, 'exam'])->name('exam');
 
-Route::get('/3', [App\Http\Controllers\HomeController::class, 'index'])->name('3');
+// ----------------------------------------------------------------------
+// Test case
+
+// Route::get('/rules', function () {
+//     return view('layouts.pages.rules');
+// });
