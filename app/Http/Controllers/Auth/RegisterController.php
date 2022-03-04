@@ -8,7 +8,6 @@ use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
-use Illuminate\Http\Request;
 
 class RegisterController extends Controller
 {
@@ -48,35 +47,14 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
-
-
-
-
-   
     protected function validator(array $data)
     {
-
-function store(Request $request)
-    {
-
-        if ($request->hasfile('profile')) {
-            $file = $request->file('profile');
-            $extention = $file->getClientOriginalExtension();
-            $filename = time() . '.' . $extention;
-            $file->move('uplods/students', $filename);
-        }
-    }
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-            'profile' => ['required', 'string', 'max:255']
         ]);
-
-  
-
     }
-
 
     /**
      * Create a new user instance after a valid registration.
@@ -90,7 +68,6 @@ function store(Request $request)
             'name' => $data['name'],
             'email' => $data['email'],
             'phone' => $data['phone'],
-            'profile' => $data['profile'],
             'password' => Hash::make($data['password']),
         ]);
     }
