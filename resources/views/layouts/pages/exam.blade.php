@@ -59,8 +59,12 @@
     <br>
     </div>
     <div class="qustion">
-        <h6><b>Q1. </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima quasi excepturi totam, soluta, asperiores, nobis ipsam debitis iste similique enim aliquid neque harum. Quo,</h6>
+
+@foreach ($qustion as $item)
+  <h6><b>Q {{$item->qid}}. </b>{{$item->qustion}}</h6>
+@endforeach
     </div>
+
     <div class="options">
         <p><b>A. </b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, officiis perspiciatis? Quidem corporis iusto voluptatum?</p>
         <p><b>B. </b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, officiis perspiciatis? Quidem corporis iusto voluptatum?</p>

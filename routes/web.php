@@ -19,7 +19,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+Auth::routes(['verify'=> true]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
@@ -31,7 +31,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/rules', [App\Http\Controllers\HomeController::class, 'rules'])->name('rules');
 
 
-Route::get('/exam', [App\Http\Controllers\HomeController::class, 'exam'])->name('exam');
+Route::get('/exam', [App\Http\Controllers\qustioncontroler::class, 'index'])->name('exam');
 
 // ----------------------------------------------------------------------
 // Test case
